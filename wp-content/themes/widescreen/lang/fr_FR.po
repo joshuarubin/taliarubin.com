@@ -1,0 +1,612 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Modularity 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-31 17:59-0600\n"
+"PO-Revision-Date: 2010-03-31 18:00-0600\n"
+"Last-Translator: Philip Arthur Moore <work@philiparthurmoore.com>\n"
+"Language-Team: Graph Paper Press <info@graphpaperpress.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/404.php:4
+msgid "Whoops! Whatever you are looking for cannot be found."
+msgstr "Désolé! Ce que vous recherchez n'a pas été trouvé."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:14
+#, php-format
+msgid "Posts Tagged &#8216;%s&#8217;"
+msgstr "Articles avec le Mot-clé &#8216;%s&#8217;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:16
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:18
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:20
+#, php-format
+msgid "Archive for %s"
+msgstr "Archive pour le %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:16
+msgid "F jS, Y"
+msgstr "j F, Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:18
+msgid "F, Y"
+msgstr "F, Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:20
+msgid "Y"
+msgstr "Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:22
+msgid "Author Archive"
+msgstr "Archives de l'Auteur"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:24
+msgid "Blog Archive"
+msgstr "Archive du Blog"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:30
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:15
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Lien permanent à %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "M d, Y"
+msgstr "d M, Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "Categories:"
+msgstr "Catégories:"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "| Tags: "
+msgstr "| Mots-clés:"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "Leave A Comment &#187;"
+msgstr "Laissez Un Commentaire &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "1 Comment &#187;"
+msgstr "1 Commentaire &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "% Comment &#187;"
+msgid_plural "% Comments &#187;"
+msgstr[0] "% Commentaire &#187;"
+msgstr[1] "% Commentaires &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "Edit"
+msgstr "Modifier"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:42
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:9
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:27
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Entrées Plus Anciennes"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:43
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:10
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:28
+msgid "Newer Entries &raquo;"
+msgstr "Nouvelles Entrées &raquo;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:31
+msgid "Not Found"
+msgstr "Non Trouvé"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Cet article est protégé par un mot de passe. Entrez le mot de passe pour voir les commentaires."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:16
+msgid "No Responses"
+msgstr "Aucune Réponses"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:16
+msgid "One Response"
+msgstr "Une Réponse"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:16
+msgid "% Response"
+msgid_plural "% Responses"
+msgstr[0] "% Réponse"
+msgstr[1] "% Réponses"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:38
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:48
+msgid "Leave a Reply"
+msgstr "Laissez une Réponse"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:48
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Laissez une réponse à %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:55
+#, php-format
+msgid "You must be <a href=\"%1$s/wp-login.php?redirect_to=%2$s\" title=\"login\">logged in</a> to post a comment."
+msgstr "Vous devez être <a href=\"%1$s/wp-login.php?redirect_to=%2$s\" title=\"login\">connecté<a href=\"%1$s/wp-login.php?redirect_to=%2$s\" title=\"login\"> pour inscrire un commentaire"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:62
+#, php-format
+msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\" title=\"%2$s\">%2$s</a>."
+msgstr "Connecté en tant que <a href=\"%1$s/wp-admin/profile.php\" title=\"%2$s\">%2$s</a>."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:62
+msgid "Log out of this account"
+msgstr "Déconnectez-vous de ce compte"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:62
+msgid "Log out &raquo;"
+msgstr "Déconnexion &raquo;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:67
+msgid "Name"
+msgstr "Nom"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:67
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:70
+msgid "(required)"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:70
+msgid "Mail (will not be published)"
+msgstr "Courriel (ne sera pas publié)"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:73
+msgid "Website"
+msgstr "Site Web"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:81
+msgid "Submit Comment"
+msgstr "Envoyer Un Commentaire"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:16
+msgid "About"
+msgstr "À Propos"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:17
+msgid "Add a little information about yourself here. It will appear in the footer of your site."
+msgstr "Ajouter un peu d'informations à propos de vous-même ici. Cela sera publié dans le 'footer' de votre site."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:18
+msgid "Read more about me"
+msgstr "En lire plus sur moi"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:24
+msgid "Credits"
+msgstr "Crédits"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:26
+msgid "Design by <a href=\"http://graphpaperpress.com\" title=\"Graph Paper Press\">Graph Paper Press</a>"
+msgstr "Design par <a href=\"http://graphpaperpress.com\" title=\"Graph Paper Press\">Graph Paper Press</a>"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:27
+msgid "Subscribe to entries"
+msgstr "Abonnez-vous aux entrées"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:28
+msgid "Subscribe to comments"
+msgstr "Abonnez-vous aux commentaires"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:29
+#, php-format
+msgid "All content &copy; %1$s by %2$s"
+msgstr "Tout le contenu &copy; %1$s by %2$s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:28
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:19
+#, php-format
+msgid "This entry was posted on %1$s at %2$s."
+msgstr "Cet entrée a été affiché %1$s à %2$s."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:28
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:19
+msgid "l, F jS, Y"
+msgstr "l, j F, Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:29
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:20
+msgid "It is filed under"
+msgstr "Classé sous"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:31
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:21
+#, php-format
+msgid "You can follow any responses to this entry through the <a href=\"%1$s\" title=\"%2$s feed\">%2$s</a> feed."
+msgstr "Vous pouvez suivre toutes les réponses à cette articles à travers le <a href=\"%1$s\" title=\"%2$s feed\">%2$s</a> feed."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:31
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:21
+msgid "RSS 2.0"
+msgstr "RSS 2.0"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:35
+#, php-format
+msgid "You can <a href=\"#respond\" title=\"leave a response\">leave a response</a> or <a href=\"%s\" title=\"trackback\">trackback</a> from your own site."
+msgstr "Vous pouvez <a href=\"#respond\" title=\"leave a response\">laisser une réponse</a> ou <a href=\"%s\" title=\"trackback\">trackback</a> à partir de votre propre site."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:39
+#, php-format
+msgid "Responses are currently closed, but you can <a href=\"%s\" title=\"trackback\">trackback</a> from your own site."
+msgstr "Les réponses sont actuellement fermées, mais vous pouvez <a href=\"%s\" title=\"trackback\">trackback</a> à partir de votre propre site."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:43
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Vous pouvez aller directement à la fin et laisser un commentaire. Envoyer un ping n'est pas actuellement autorisé."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:47
+msgid "Both comments and pings are currently closed."
+msgstr "Les commentaires et les pings sont actuellement fermés."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page-wide.php:20
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page.php:15
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:22
+msgid "Edit this entry"
+msgstr "Modifier cette article"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:65
+msgid "Sorry, no attachments matched your criteria."
+msgstr "Désolé, aucune pièces jointes correspondant à vos critères."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:21
+msgid "Categories"
+msgstr "Catégories"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:64
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:66
+msgid "No categories"
+msgstr "Aucune catégories"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:104
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page-wide.php:16
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page.php:12
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:14
+msgid "Pages"
+msgstr "Pages"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:169
+msgid "categories"
+msgstr "catégories"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:175
+msgid "pages"
+msgstr "pages"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:181
+msgid "subscribe"
+msgstr "s'abonner"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:183
+msgid "feed"
+msgstr "feed"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:183
+msgid "posts"
+msgstr "articles"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:184
+msgid "comments"
+msgstr "commentaires"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:190
+msgid "contact"
+msgstr "contact"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:193
+msgid "email me"
+msgstr "écrivez-moi"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:200
+msgid "image archive"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:202
+msgid "archive home"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:203
+msgid "galleries"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:204
+msgid "search archive"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:205
+msgid "lightbox"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:206
+msgid "cart"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:207
+msgid "client login"
+msgstr ""
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:208
+msgid "about"
+msgstr "à propos"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:226
+msgid "search"
+msgstr "recherche"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:6
+msgid "Search Results"
+msgstr "Résultats de la Recherche"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "Have your say &#187;"
+msgstr "Donnez votre avis &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:33
+msgid "No posts found."
+msgstr "Aucun articles trouvé."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:34
+msgid "Use the search tap at top right to start a new search."
+msgstr "Utilisez la recherche en haut à droite pour lancer une nouvelle recherche."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/searchform.php:3
+msgid "Search"
+msgstr "Rechercher"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:20
+msgid " and tagged with "
+msgstr "et avec les mots-clés"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:32
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Désolé, mais vous cherchez quelque chose qui n'est pas ici."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/blog.php:8
+msgid "Blog"
+msgstr "Blog"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:46
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:52
+#, php-format
+msgid "More in %s"
+msgstr "Plus dans %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "Discuss"
+msgstr "Discutez"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "1 Comment"
+msgstr "1 Commentaire"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "% Comment"
+msgid_plural "% Comments"
+msgstr[0] "% Commentaire"
+msgstr[1] "% Commentaires"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:6
+msgid "Latest"
+msgstr "Dernier"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:44
+msgid "Previously"
+msgstr "Précédemment"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "Read"
+msgstr "Lire"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/slider-posts.php:21
+msgid "Continue Reading"
+msgstr "Continuer la Lecture"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/welcome.php:5
+msgid "Howdy folks!"
+msgstr "Salut les amis!"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/welcome.php:6
+msgid "You are seeing this message because you have not configured your <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> yet.  You can add or remove this message, and a variety of other design options for your homepage, by visiting the admin section of your new site and clicking <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> in the left sidebar.  You can control virtually every aspect of the homepage design on the <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> page."
+msgstr "Vous voyez ce message parce que vous n'avez pas configuré vos <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\"> options du thème</ a> pour le moment. Vous pouvez ajouter ou supprimer ce message, et une variété d'autres options de conception de votre page d'accueil, en visitant la section admin de votre nouveau site et en cliquant sur <a href=\\\"/wp-admin/admin.php?page=gppthemes=\\\">options du thème</a> dans la barre latérale gauche. Vous pouvez contrôler pratiquement tous les aspects de la conception du site web sur la page <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\"> Options du thème </ a>."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/lib/theme-comments.php:12
+msgid "d. M, Y"
+msgstr "d. M, Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/lib/theme-comments.php:18
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/lib/theme-comments.php:22
+msgid "Reply to this comment"
+msgstr "Répondre à ce commentaire"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/featured.php:40
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/featured.php:40
+msgid "Latest Blog Entry"
+msgstr "Dernière Entrée du Blog"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/featured.php:48
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/featured.php:48
+msgid "Previous Blog Entries"
+msgstr "Entrées du Blog Précédente"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/functions.php:20
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/functions.php:19
+msgid "Extend Featured Section"
+msgstr "Elargir la Section En Vedette"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/functions.php:21
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/functions.php:20
+msgid "Check this to extend Thumbnails Section to 3 columns."
+msgstr "Cochez cette option pour agrandir la Section Onglets de 3 colonnes."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/inside.php:10
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-remixed-child/inside.php:10
+msgid "View Work"
+msgstr "Voir le Travail"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modslider/header.php:45
+msgid "Syndicate this site using RSS"
+msgstr "Suivez ce site par RSS"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modslider/header.php:45
+msgid "<abbr title=\"Really Simple Syndication\">Subscribe</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">S'Abonner</abbr>"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/archive.php:22
+msgid "Archives"
+msgstr "Archives"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/featured.php:12
+msgid "Featured"
+msgstr "En Vedette"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/featured.php:32
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/featured.php:53
+msgid "More"
+msgstr "Plus"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/featured.php:5
+msgid "Recent Work"
+msgstr "Travaux Récents"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:21
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:92
+msgid "Add a little information about yourself here.  It will appear in the footer of your site."
+msgstr "Ajouter un peu d'informations à propos de vous-même ici. Cela sera publié dans le 'footer' de votre site."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:22
+msgid "Read more about me."
+msgstr "En savoir plus sur moi."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:25
+msgid "Latest Tweet"
+msgstr "Dernier Tweet"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:27
+msgid "Follow us at Twitter"
+msgstr "Suivez-nous sur Twitter"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:34
+msgid "Recent from Blog"
+msgstr "Récent du Blog"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:46
+msgid "Get in touch"
+msgstr "Entrer en contact"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:48
+msgid "Address"
+msgstr "Address"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:53
+msgid "Email"
+msgstr "Courriel"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:56
+msgid "Phone"
+msgstr "Téléphone"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:71
+#, php-format
+msgid "&copy; %1$s by %2$s"
+msgstr "&copy; %1$s par %2$s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:80
+msgid "Footer Options"
+msgstr "Options du Footer"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:84
+msgid "Enter your Twitter ID. If you do not have Twitter account, the content from About is shown. Leave this field blank"
+msgstr "Entrez votre ID Twitter. Si vous n'avez pas de compte Twitter, le contenu de 'À propos' est montré. Laissez ce champ vide"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:89
+msgid "About You Snippet"
+msgstr "Petit Extrait À Propos de Vous"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:90
+msgid "Include a little snippet about yourself that is displayed in the header."
+msgstr "Inclure un petit extrait À Propos de vous-même qui est affichée dans l'en-tête."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:95
+msgid "About You Read More Link"
+msgstr "Lien Pour En Lire Plus À Propos de Vous"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:96
+msgid "URL of the read more link e.g. http://www.yoursite.com/about"
+msgstr "URL du lien 'En Lire Plus' e.g. http:www.votresite.com/apropos"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:131
+msgid "Work-a-holic Pro Options"
+msgstr "Options Pro Work-a-holic"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:134
+msgid "Alternate Theme"
+msgstr "Thème Alternatif"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:135
+msgid "Select your themes alternative color scheme."
+msgstr "Sélectionnez votre plan de couleurs pour votre thème alternatif"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:141
+msgid "Number of Posts to show in Archives"
+msgstr "Nombre de d'articles à montrer dans les archives"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:142
+msgid "Select the number of posts you want to show. Defaults to 12."
+msgstr "Sélectionnez le nombre d'articles que vous voulez afficher. Par défaut à 12."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/nav.php:177
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/sidebar-portfolio.php:3
+msgid "Similar Projects"
+msgstr "Projets Similaires"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:12
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:14
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:26
+msgid "Showcasing Portfolio"
+msgstr "Espaces de Portfolio"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:43
+msgid "You are seeing this message because you have not configured your <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> yet."
+msgstr "Vous voyez ce message parce que vous n'avez pas configuré vos <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\"> options du thème </ a> pour le moment. "
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\workspace/nav.php:5
+msgid "Navigation"
+msgstr "Navigation"
+
+#~ msgid ""
+#~ "You need to <a href=\"http://get.adobe.com/flashplayer/\">upgrade your "
+#~ "Flash Player to version 9 or newer</a>."
+#~ msgstr ""
+#~ "Vous devez <a href=\"http://get.adobe.com/flashplayer/\">mettre à jour "
+#~ "votre lecteur Flash a la version 9 ou une version plus récentes</a>."

@@ -1,0 +1,65 @@
+== Changelog ==
+
+= Version 1.7.5 (Dec. 31, 2012)
+	* PhotoShelter + Google Fonts bug fix
+
+= Version 1.7.4 (October 18, 2012)
+	* Google Fonts bug fix
+
+= Version 1.7.3 (September 18, 2012)
+	* Remove Option Tree folder
+
+= Version 1.7.2 (September 17, 2012)
+	* Custom css not propagating to customizer bug fix
+	* Gallery image navigation added.
+	* Image showing differently in different browser bug fixed.
+
+= Version 1.7.1 (August 22, 2012)
+	* Theme options reseting bug fixed
+	* IE7 slideshow image bug fixed
+
+= Version 1.7.0 (August 16, 2012)
+	* new settings API integrated, removing Option Tree Settings
+
+= Version 1.6.7 (May 21, 2012)
+	* css not loading in gallery post format fixed.
+
+= Version 1.6.6 (March 29, 2012)
+	* Fixing issue where main content area had a fluid margin past a certain width.
+
+= Version 1.6.5 (March 7, 2012)
+	* Making it responsive
+
+= Version 1.6.4 (Nov. 10, 2011)
+	* minor css fix
+
+= Version 1.6.3 (Nov. 4, 2011)
+	* minor footer changes
+	* default js options set
+
+= Version 1.6.2 (Nov. 4, 2011)
+	* get_options() wasn't working on slideshow images
+	* missing echo for print & IE stylesheets
+
+= Version 1.6.1 (Oct. 26, 2011)
+	* PhotoShelter integration bugfix (includes/photoshelter-meta.php)
+
+= Version 1.6 (Oct. 21, 2011)
+	* Integrated OptionTree plugin
+	* Removed unused options
+	* Moved Featured section to Page template
+	* Removed antiquated flash player. Must use http://wordpress.org/extend/plugins/media-element-html5-video-and-audio-player/
+	* PHP Notice cleanup
+
+= Version 1.5.3 (August 23, 2011)
+	* HTML embeds in Welcome Message and Embed Code theme options
+	* Options to randomize slideshow is gone
+	* Pages and post content was showing behind menu
+	* Improved Google Fonts options
+= Version 1.5 (June 17, 2011)
+	* Added fullscreen slideshow template
+= Version 1.4 (February 22, 2011)
+ 	* Fixed iPhone CSS bugs and enhancements
+	* Updated Photoshelter integration
+= Version 1.0 (May 5, 2010) =
+	* Initial release

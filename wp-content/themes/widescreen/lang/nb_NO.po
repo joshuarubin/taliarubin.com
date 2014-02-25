@@ -1,0 +1,606 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Modularity 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-01 14:09-0600\n"
+"PO-Revision-Date: 2010-04-01 14:11-0600\n"
+"Last-Translator: Philip Arthur Moore <work@philiparthurmoore.com>\n"
+"Language-Team: Graph Paper Press <info@graphpaperpress.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Norwegian Bokmal\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/404.php:4
+msgid "Whoops! Whatever you are looking for cannot be found."
+msgstr "Woops! Det du så etter ble ikke funnet."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:14
+#, php-format
+msgid "Posts Tagged &#8216;%s&#8217;"
+msgstr "Innlegg med følgende stikkord: &#8216;%s&#8217;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:16
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:18
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:20
+#, php-format
+msgid "Archive for %s"
+msgstr "Arkiv for %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:16
+msgid "F jS, Y"
+msgstr "j. F Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:18
+msgid "F, Y"
+msgstr "F Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:20
+msgid "Y"
+msgstr "Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:22
+msgid "Author Archive"
+msgstr "Forfatterarkiv"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:24
+msgid "Blog Archive"
+msgstr "Bloggarkiv"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:30
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:15
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Permanent link til %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "M d, Y"
+msgstr "d M Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "Categories:"
+msgstr "Kategorier:"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "| Tags: "
+msgstr "| Stikkord: "
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "Leave A Comment &#187;"
+msgstr "Legg igjen en kommentar &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "1 Comment &#187;"
+msgstr "1 kommentar &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "% Comment &#187;"
+msgid_plural "% Comments &#187;"
+msgstr[0] "% komment &#187;"
+msgstr[1] "% kommentarer &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:34
+msgid "Edit"
+msgstr "Rediger"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:42
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:9
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:27
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Eldre innlegg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:43
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:10
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:28
+msgid "Newer Entries &raquo;"
+msgstr "Nyere innlegg &raquo;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/archive.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:31
+msgid "Not Found"
+msgstr "Ingen resultater"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Dette innlegget er passordbeskyttet. Skriv inn passordet ditt for å lese kommentarer."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:16
+msgid "No Responses"
+msgstr "Ingen svar"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:16
+msgid "One Response"
+msgstr "Ett svar"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:16
+msgid "% Response"
+msgid_plural "% Responses"
+msgstr[0] "% svar"
+msgstr[1] "% svar"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:38
+msgid "Comments are closed."
+msgstr "Stengt for kommentarer"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:48
+msgid "Leave a Reply"
+msgstr "Legg igjen en kommentar"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:48
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Legg igjen en kommentar til %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:55
+#, php-format
+msgid "You must be <a href=\"%1$s/wp-login.php?redirect_to=%2$s\" title=\"login\">logged in</a> to post a comment."
+msgstr "Du må være <a href=\"%1$s/wp-login.php?redirect_to=%2$s\" title=\"login\">innlogget</a> for å kunne kommentere."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:62
+#, php-format
+msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\" title=\"%2$s\">%2$s</a>."
+msgstr "Du er logget inn som <a href=\"%1$s/wp-admin/profile.php\" title=\"%2$s\">%2$s</a>."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:62
+msgid "Log out of this account"
+msgstr "Logg ut av denne kontoen"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:62
+msgid "Log out &raquo;"
+msgstr "Logg ut &raquo;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:67
+msgid "Name"
+msgstr "Navn"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:67
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:70
+msgid "(required)"
+msgstr "(Påkrevd)"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:70
+msgid "Mail (will not be published)"
+msgstr "E-post (vil ikke bli vist)"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:73
+msgid "Website"
+msgstr "Hjemmeside"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/comments.php:81
+msgid "Submit Comment"
+msgstr "Send kommentar"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:16
+msgid "About"
+msgstr "Om bloggen"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:17
+msgid "Add a little information about yourself here. It will appear in the footer of your site."
+msgstr "Legg inn litt informasjon om deg selv. Den vil bli vist i bunnteksten."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:18
+msgid "Read more about me"
+msgstr "Les mer om meg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:24
+msgid "Credits"
+msgstr "Bidragsytere"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:26
+msgid "Design by <a href=\"http://graphpaperpress.com\" title=\"Graph Paper Press\">Graph Paper Press</a>"
+msgstr "Design av <a href=\"http://graphpaperpress.com\" title=\"Graph Paper Press\">Graph Paper Press</a>"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:27
+msgid "Subscribe to entries"
+msgstr "Abbonnér på innlegg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:28
+msgid "Subscribe to comments"
+msgstr "Abbonnér på kommentarer"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/footer.php:29
+#, php-format
+msgid "All content &copy; %1$s by %2$s"
+msgstr "Alt innhold &copy; %1$s %2$s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:28
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:19
+#, php-format
+msgid "This entry was posted on %1$s at %2$s."
+msgstr "Dette innlegget ble lagt ut  %1$s klokka %2$s."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:28
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:19
+msgid "l, F jS, Y"
+msgstr "l j. F Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:29
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:20
+msgid "It is filed under"
+msgstr "Det er arkivert under "
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:31
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:21
+#, php-format
+msgid "You can follow any responses to this entry through the <a href=\"%1$s\" title=\"%2$s feed\">%2$s</a> feed."
+msgstr "Du kan følge med på svar på dette innlegget gjennom <a href=\"%1$s\" title=\"%2$s feed\">%2$s</a>-strømmen."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:31
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:21
+msgid "RSS 2.0"
+msgstr "RSS 2.0"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:35
+#, php-format
+msgid "You can <a href=\"#respond\" title=\"leave a response\">leave a response</a> or <a href=\"%s\" title=\"trackback\">trackback</a> from your own site."
+msgstr "Du kan <a href=\"#respond\" title=\"leave a response\">legge igjen en kommentar</a> eller <a href=\"%s\" title=\"trackback\">spore tilbake</a> fra din egen hjemmeside"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:39
+#, php-format
+msgid "Responses are currently closed, but you can <a href=\"%s\" title=\"trackback\">trackback</a> from your own site."
+msgstr "For tiden stengt for kommentarer, men du kan <a href=\"%s\" title=\"trackback\">spore tilbake</a> fra din egen hjemmeside."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:43
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Du kan gå direkte til komentarfeltet og legge igjen en kommentar. Pinging er for tiden ikke lov."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:47
+msgid "Both comments and pings are currently closed."
+msgstr "Stengt for både kommentarer og pings."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page-wide.php:20
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page.php:15
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:22
+msgid "Edit this entry"
+msgstr "Rediger innlegget"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/image.php:65
+msgid "Sorry, no attachments matched your criteria."
+msgstr "Beklager, men ingen vedlegg passer til dine søkekriterier."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:21
+msgid "Categories"
+msgstr "Kategorier"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:64
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:66
+msgid "No categories"
+msgstr "Ingen kategorier"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:104
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page-wide.php:16
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/page.php:12
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:14
+msgid "Pages"
+msgstr "Sider"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:169
+msgid "categories"
+msgstr "kategorier"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:175
+msgid "pages"
+msgstr "sider"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:181
+msgid "subscribe"
+msgstr "Abbonnér"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:183
+msgid "feed"
+msgstr "RSS-strøm"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:183
+msgid "posts"
+msgstr "Innlegg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:184
+msgid "comments"
+msgstr "Kommentarer"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:190
+msgid "contact"
+msgstr "Kontakt"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:193
+msgid "email me"
+msgstr "E-post"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:200
+msgid "image archive"
+msgstr "Bildearkiv"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:202
+msgid "archive home"
+msgstr "Hjem"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:203
+msgid "galleries"
+msgstr "Gallerier"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:204
+msgid "search archive"
+msgstr "Søk i bildearkivet"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:205
+msgid "lightbox"
+msgstr "Lightbox"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:206
+msgid "cart"
+msgstr "Handlevogn"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:207
+msgid "client login"
+msgstr "Kundeinnlogging"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:208
+msgid "about"
+msgstr "Om bildegalleriet"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/nav.php:226
+msgid "search"
+msgstr "Søk"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:6
+msgid "Search Results"
+msgstr "Søkeresultat"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:19
+msgid "Have your say &#187;"
+msgstr "Si din mening &#187;"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:33
+msgid "No posts found."
+msgstr "Ingen innlegg funnet."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/search.php:34
+msgid "Use the search tap at top right to start a new search."
+msgstr "Bruk søkefeltet øverst for å begynne et nytt søk."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/searchform.php:3
+msgid "Search"
+msgstr "Søk"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:20
+msgid " and tagged with "
+msgstr " med stikkordene "
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/single.php:32
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Beklager, men du ser etter noe som ikke er her."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/blog.php:8
+msgid "Blog"
+msgstr "Blogg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:46
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:52
+#, php-format
+msgid "More in %s"
+msgstr "Mer under %s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "Discuss"
+msgstr "Diskutér"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/category-columns.php:49
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "% Comment"
+msgid_plural "% Comments"
+msgstr[0] "% kommentar"
+msgstr[1] "% kommentarer"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:6
+msgid "Latest"
+msgstr "Nyeste"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:44
+msgid "Previously"
+msgstr "Forrige"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/featured.php:63
+msgid "Read"
+msgstr "Les"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/slider-posts.php:21
+msgid "Continue Reading"
+msgstr "Les videre"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/welcome.php:5
+msgid "Howdy folks!"
+msgstr "Hei, folkens!"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/apps/welcome.php:6
+msgid "You are seeing this message because you have not configured your <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> yet.  You can add or remove this message, and a variety of other design options for your homepage, by visiting the admin section of your new site and clicking <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> in the left sidebar.  You can control virtually every aspect of the homepage design on the <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> page."
+msgstr "Du ser denne beskjeden fordi ikke har tilpasset dine <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">temavalg</a> enda. Du kan legge til eller fjerne denne beskjeden, samt en rekke andre designvalg for bloggen din, ved å gå til administrasjondelen av siden hjemmesiden din og trykke på <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">temavalg</a> i venstre marg.  Du kan tilpasse nesten alle sider ved siden din på <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">temavalg</a>-siden."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/lib/theme-comments.php:12
+msgid "d. M, Y"
+msgstr "d. M Y"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/lib/theme-comments.php:18
+msgid "Your comment is awaiting moderation."
+msgstr "Kommentaren din må godjennes."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modularity/lib/theme-comments.php:22
+msgid "Reply to this comment"
+msgstr "Svar på denne kommentaren"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/featured.php:40
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/featured.php:40
+msgid "Latest Blog Entry"
+msgstr "Ferskeste blogginnlegg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/featured.php:48
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/featured.php:48
+msgid "Previous Blog Entries"
+msgstr "Eldre blogginnlegg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/functions.php:20
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/functions.php:19
+msgid "Extend Featured Section"
+msgstr "Utvid denne seksjonen"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modfolio/functions.php:21
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/functions.php:20
+msgid "Check this to extend Thumbnails Section to 3 columns."
+msgstr "Klikk her for å utvide Thumbnails-delen til 3 kolonner."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-child/inside.php:10
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\f8-remixed-child/inside.php:10
+msgid "View Work"
+msgstr "Se arbeidet"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modslider/header.php:45
+msgid "Syndicate this site using RSS"
+msgstr "Del denne hjemmesiden via RSS"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\modslider/header.php:45
+msgid "<abbr title=\"Really Simple Syndication\">Subscribe</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">Abbonér</abbr>"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/archive.php:22
+msgid "Archives"
+msgstr "Arkiv"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/featured.php:12
+msgid "Featured"
+msgstr "Hovedsak"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/featured.php:32
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\on-assignment/featured.php:53
+msgid "More"
+msgstr "Mer"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/featured.php:5
+msgid "Recent Work"
+msgstr "Nyere arbeid"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:21
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:92
+msgid "Add a little information about yourself here.  It will appear in the footer of your site."
+msgstr "Legg til litt informasjon om deg selv her. Den vil bli vist i bunnteksten."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:22
+msgid "Read more about me."
+msgstr "Les mer om meg."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:25
+msgid "Latest Tweet"
+msgstr "Ferskeste Tweets"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:27
+msgid "Follow us at Twitter"
+msgstr "Følg oss på Twitter"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:34
+msgid "Recent from Blog"
+msgstr "Nytt fra bloggen"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:46
+msgid "Get in touch"
+msgstr "Ta kontakt"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:48
+msgid "Address"
+msgstr "Adresse"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:53
+msgid "Email"
+msgstr "E-post"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:56
+msgid "Phone"
+msgstr "Telefon"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/footer.php:71
+#, php-format
+msgid "&copy; %1$s by %2$s"
+msgstr "&copy; %1$s av %2$s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:80
+msgid "Footer Options"
+msgstr "Valg for bunnteksten."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:84
+msgid "Enter your Twitter ID. If you do not have Twitter account, the content from About is shown. Leave this field blank"
+msgstr "Skriv inn din Twitter-ID. Hvis du ikke har en Twittwer-konto, vises innholdet frra Om. La dette feltet i tilfelle stå tomt."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:89
+msgid "About You Snippet"
+msgstr "Om deg- tekst"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:90
+msgid "Include a little snippet about yourself that is displayed in the header."
+msgstr "Legg til en liten tekst om deg selv som vil bli vist i headeren."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:95
+msgid "About You Read More Link"
+msgstr "Om deg les mer-link"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:96
+msgid "URL of the read more link e.g. http://www.yoursite.com/about"
+msgstr "URL til Les mer-linken, dvs. http://www.dinside.com/om"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:131
+msgid "Work-a-holic Pro Options"
+msgstr "Work-a-holig Pro-valg"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:134
+msgid "Alternate Theme"
+msgstr "Alternative tema"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:135
+msgid "Select your themes alternative color scheme."
+msgstr "Alternative fargevalg for ditt tema."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:141
+msgid "Number of Posts to show in Archives"
+msgstr "Antall innlegg som skal vises i arkivet"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/functions.php:142
+msgid "Select the number of posts you want to show. Defaults to 12."
+msgstr "Velg antall innlegg du vil vise. Standard er satt til 12."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/nav.php:177
+msgid "Portfolio"
+msgstr "Portefølje"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/sidebar-portfolio.php:3
+msgid "Similar Projects"
+msgstr "Lignende prosjekter"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:12
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:14
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:26
+msgid "Showcasing Portfolio"
+msgstr "Showcase-portefølje"
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\work-a-holic-pro/welcome.php:43
+msgid "You are seeing this message because you have not configured your <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">theme options</a> yet."
+msgstr "Du ser denne beskjeden fordu ikke har foretatt noen <a href=\\\"/wp-admin/admin.php?page=gppthemes\\\">temavalg</a> enda."
+
+#: C:\wamp\www\graphpaperpress\wordpress\wp-content\themes\workspace/nav.php:5
+msgid "Navigation"
+msgstr "Navigering"
+

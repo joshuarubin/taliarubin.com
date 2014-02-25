@@ -1,0 +1,138 @@
+/* 
+ * CREDITS: 
+ * Copyright (c) 2009 Massimiliano Balestrieri
+ * $Date: 2010-12-19 19:03:40 +0100 (dom, 19 dic 2010) $
+ * $Revision: 33 $
+ * $Author: massimiliano.balestrieri $
+ * $HeadURL: https://jbgallery.googlecode.com/svn/branches/3.0/jbgallery-3.0.css $
+ * $Id: jbgallery-3.0.css 33 2010-12-19 18:03:40Z massimiliano.balestrieri $
+ * Thanks to Aaron Hutten and Simone Parato
+*/
+
+html.loading *{visibility:hidden;}
+html.jbg a{outline:none;}
+html.jbg-body,body.jbg-body,.jbgallery,.jbgallery .jbg-wrap table,.jbgallery .jbg-wrap td{ overflow: hidden; width:100%; height:100%; margin:0; padding: 0px; }
+.jbgallery .jbg-wrap{ position: fixed; width:200%; height:200%; top:-50%; left:-50%; } /*jbox MOD*/
+html.ie6 .jbgallery .jbg-wrap{ position: absolute; } /*jbox MOD*/
+.jbgallery .jbg-wrap td{vertical-align:middle;text-align:center}
+.jbgallery .jbgallery-target{margin:0 auto}
+.jbgallery .jbgallery-target.zoom{ min-height: 50%; width: 50%; }
+.jbgallery .jbgallery-target.centered, 
+.jbgallery .jbgallery-target.original {min-height:auto;min-width:auto;}
+
+/*CENTERED*/
+.jbg-wrap.centered, .jbg-wrap.original{position:static;width:auto;height:100%;}
+
+/*CENTERED MODAL*/
+.jbg-wrap.modal{position:absolute;width:200%;top:0;}
+
+/* BOX */
+.jbox{position:relative;}
+.jbox div.jbg-wrap{position:absolute;}
+.jbox div.jbg-wrap.centered,.jbox div.jbg-wrap.original{position:static;}
+
+/* LOADING */
+div.jbg-loading{position:absolute;width:100%;height:100%;z-index:1000;display:none;}
+
+/*OPTIONAL CONTENT AND MENU -> customize this */
+#jbg-content{top:0px;left:0px;position:absolute;font-size:11px;width:100%;height:100%;overflow:auto}
+
+/**********************************************  SLIDER ********************************************** */
+.jbgs-opacity, .jbgs {width:100%;height:70px;position:absolute;bottom:0px;z-index:1000;} 
+.jbgs-opacity{ }
+.jbgs-left, .jbgs-right, .jbgs-wrapper{position:relative;}
+.jbgs-left, .jbgs-right, .jbgs-viewer{float:left;height:70px;}
+/* LEFT/RIGHT SLIDER*/
+.jbgs-left{width:105px;}
+.jbgs-right{width:20px;}
+/* VIEWER */
+.jbgs-viewer{position:relative;overflow:hidden;/*width:1020px;calcolata da jquery?*/}
+/* INNER */
+.jbgs-inner{position:relative;left:0;top:0;width:20000px;}
+/* INNER : todo padding e margin. thumb dimensions*/
+.jbgs a{color:#333;}
+.jbgs img{border:0;}
+.jbgs ul, .jbgs li {margin:0;padding:0;}
+.jbgs li {display: block;list-style: none;float: left;height: 51px;width: 60px;}
+.jbgs li a{	display:block;padding:3px;margin: 5px 5px 5px 2px;}
+/* new - 21/06/2010*/
+.jbgs li a div{position:relative;height:51px;width:51px;overflow:hidden;border:2px solid #999999;}
+.jbgs li img{height:auto;width:auto;border:0;/*height:51px;width: 51px;border:2px solid #999;*/}
+.jbgs img.jbgs-thumb-landscape{height:51px;position:absolute;}
+.jbgs img.jbgs-thumb-portrait{width:51px;position:absolute;}
+.jbgs li a div.focus{ border-color:#fff; }/* new - 15/12/2010*/
+
+.jbgs-h{position:absolute;background:url('../images/sprite.png') no-repeat;}
+.jbgs-h, .jbgs-h:hover, .jbgs-h:active{text-align:left;text-indent:-9999px;letter-spacing:-9999px;}/*Simone Parato*/
+.jbgs-h-pause,.jbgs-h-play{width:55px;height:28px;left:18px;top:20px;}
+.jbgs-h-left,.jbgs-h-right{width:16px;height:49px;top:10px;}
+.jbgs-h-left{background-position: 0 0;left:90px;}
+.jbgs-h-right{background-position: -16px 0;left:6px;}
+.jbgs-h-play{background-position: 0 -49px;}
+.jbgs-h-pause{background-position: 0 -76px;}
+/*THUMBS*/
+.jbgs-thumb{position:absolute;bottom:70px;z-index:10000;}
+.jbgs-thumb img{display:block;border:2px solid #fff;}
+.jbgs-thumb img.jbgs-thumb-portrait{width:100px;}
+.jbgs-thumb img.jbgs-thumb-landscape{height:100px;}
+.jbgs-thumb-btn{height:6px;}
+.jbgs-thumb-tip{height:6px;width:12px;margin:0 auto;background:url('../images/sprite.png') no-repeat;background-position:-32px 0px;}
+
+
+
+/*TOP*/
+.jbgs-top{width:100%;height:32px;position:absolute;top:0;z-index:1000;}
+.jbgs-top a, .jbgs-top span{font-size:13px;text-decoration:none;}
+.jbgs-top-right{position:absolute;right:10px;padding-top:5px;}
+.jbgs-top-center{margin:0 auto;width:126px;position:relative}
+.jbgs-h-prev,.jbgs-h-next{position:absolute;width:62px;height:16px;top:7px}
+.jbgs-h-prev{background-position: 0 -121px;left:0px;}
+.jbgs-h-next{background-position: 0 -105px;right:0px;}
+
+/*CAPTION*/
+.jbg-caption{ visibility: visible; position: absolute; z-index:1001; left: 43px; bottom: 67px; width: 200px; overflow: hidden; padding: 10px; }
+.jbg-caption h3 { line-height: 26px; text-align: left; margin-bottom:0;}
+.jbgs-cnt .jbg-caption { color: #aaa; overflow-y: auto; }
+
+ 
+/**********************************************  MENUSIMPLE ********************************************** */
+ul.jbg-menu {z-index:99999;padding:0px;margin:0px;position:absolute;bottom:50px;left:50px; zoom:1;}
+ul.jbg-menu{ font-size: 11px; }
+ul.jbg-menu li{ list-style: none; display: block; float: left; padding: 4px; }
+ul.jbg-menu li a{ border: 0; text-decoration: none; color: #aaa; }/*-moz-outline:none;*/	
+
+ul.jbg-menu li a.visited{color:#ccc;}
+ul.jbg-menu li a:focus{color:#fff;}
+
+/*controls*/
+.jbg-play{}
+.jbg-stop{}
+.jbg-next{}
+.jbg-prev{}
+.jbg-info{}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

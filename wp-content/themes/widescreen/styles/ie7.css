@@ -1,0 +1,6 @@
+html>body #masthead #logo h1{margin-top:15px;margin-right:20px;}
+html>body #masthead #logo .description{float:none;margin-top: 23px;}
+.container { float: left; }
+#menu ul li a { height:1%; line-height:24px; display:block; padding:1.5em 2em 1em; }
+#jbg-menu-opacity { width: 90% !important; }
+#commentform #submit { padding: 5px 0; }
