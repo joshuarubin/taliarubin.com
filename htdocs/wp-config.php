@@ -14,6 +14,23 @@
  * @package WordPress
  */
 
+define('WP_CACHE', true);
+
+$sasl_memcached_config = array(
+  'default' => array(
+    array(
+      'host' => explode(":", $_ENV["MEMCACHIER_SERVERS"])[0],
+      'port' => explode(":", $_ENV["MEMCACHIER_SERVERS"])[1],
+      'user' => $_ENV["MEMCACHIER_USERNAME"],
+      'pass' => $_ENV["MEMCACHIER_PASSWORD"],
+    ),
+  ),
+);
+
+// Disable filesystem level changes from WP
+define('DISALLOW_FILE_EDIT', true);
+define('DISALLOW_FILE_MODS', true);
+
 // ** Heroku Postgres settings - from Heroku Environment ** //
 $db = parse_url($_ENV["DATABASE_URL"]);
 
@@ -87,7 +104,7 @@ define('WP_DEBUG', false);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+  define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
