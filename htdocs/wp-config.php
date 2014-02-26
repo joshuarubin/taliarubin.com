@@ -19,8 +19,8 @@ define('WP_CACHE', true);
 $sasl_memcached_config = array(
   'default' => array(
     array(
-      'host' => explode(":", $_ENV["MEMCACHIER_SERVERS"])[0],
-      'port' => explode(":", $_ENV["MEMCACHIER_SERVERS"])[1],
+      'host' => (explode(":", $_ENV["MEMCACHIER_SERVERS"])[0]),
+      'port' => (explode(":", $_ENV["MEMCACHIER_SERVERS"])[1]),
       'user' => $_ENV["MEMCACHIER_USERNAME"],
       'pass' => $_ENV["MEMCACHIER_PASSWORD"],
     ),
