@@ -16,13 +16,17 @@
 
 define('WP_CACHE', true);
 
+$MEMCACHIER_SERVERS = explode(':', getenv('MEMCACHIER_SERVERS'));
+$MEMCACHIER_HOST    = $MEMCACHIER_SERVERS[0];
+$MEMCACHIER_PORT    = $MEMCACHIER_SERVERS[1];
+
 $sasl_memcached_config = array(
   'default' => array(
     array(
-      'host' => (explode(":", $_ENV["MEMCACHIER_SERVERS"])[0]),
-      'port' => (explode(":", $_ENV["MEMCACHIER_SERVERS"])[1]),
-      'user' => $_ENV["MEMCACHIER_USERNAME"],
-      'pass' => $_ENV["MEMCACHIER_PASSWORD"],
+      'host' => $MEMCACHIER_HOST,
+      'port' => $MEMCACHIER_PORT,
+      'user' => getenv('MEMCACHIER_USERNAME'),
+      'pass' => getenv('MEMCACHIER_PASSWORD'),
     ),
   ),
 );
@@ -32,20 +36,20 @@ define('DISALLOW_FILE_EDIT', true);
 define('DISALLOW_FILE_MODS', true);
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+$db = parse_url(getenv('DATABASE_URL'));
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+define('DB_NAME', trim($db['path'],'/'));
 
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('DB_USER', $db['user']);
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', $db['pass']);
 
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', $db['host']);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
