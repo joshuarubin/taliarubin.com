@@ -600,7 +600,7 @@ class WordpressReadOnly extends WordpressReadOnlyGeneric {
 
 		switch ($mime_type) {
 			case 'image/jpeg':
-				imagejpeg($image, $tmpfile);
+				imagejpeg($image, $tmpfile, 90);
 				break;
 			case 'image/png':
 				imagepng($image, $tmpfile);
