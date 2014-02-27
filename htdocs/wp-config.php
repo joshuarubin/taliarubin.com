@@ -31,9 +31,6 @@ $sasl_memcached_config = array(
   ),
 );
 
-define('AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID'));
-define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
-
 // Disable filesystem level changes from WP
 define('DISALLOW_FILE_EDIT', TRUE);
 define('DISALLOW_FILE_MODS', TRUE);
