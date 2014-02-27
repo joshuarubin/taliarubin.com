@@ -14,7 +14,7 @@
  * @package WordPress
  */
 
-define('WP_CACHE', true);
+define('WP_CACHE', getenv('CACHE') ? TRUE : FALSE);
 
 $MEMCACHIER_SERVERS = explode(':', getenv('MEMCACHIER_SERVERS'));
 $MEMCACHIER_HOST    = $MEMCACHIER_SERVERS[0];
@@ -32,8 +32,8 @@ $sasl_memcached_config = array(
 );
 
 // Disable filesystem level changes from WP
-define('DISALLOW_FILE_EDIT', true);
-define('DISALLOW_FILE_MODS', true);
+define('DISALLOW_FILE_EDIT', TRUE);
+define('DISALLOW_FILE_MODS', TRUE);
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
 $db = parse_url(getenv('DATABASE_URL'));
@@ -102,7 +102,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', FALSE);
 
 /* That's all, stop editing! Happy blogging. */
 
