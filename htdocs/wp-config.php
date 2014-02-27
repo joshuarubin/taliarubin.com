@@ -14,24 +14,22 @@
  * @package WordPress
  */
 
-if (getenv('CACHE') == 1) {
-  define('WP_CACHE', TRUE);
+define('WP_CACHE', getenv('CACHE') ? TRUE : FALSE);
 
-  $MEMCACHIER_SERVERS = explode(':', getenv('MEMCACHIER_SERVERS'));
-  $MEMCACHIER_HOST    = $MEMCACHIER_SERVERS[0];
-  $MEMCACHIER_PORT    = $MEMCACHIER_SERVERS[1];
+$MEMCACHIER_SERVERS = explode(':', getenv('MEMCACHIER_SERVERS'));
+$MEMCACHIER_HOST    = $MEMCACHIER_SERVERS[0];
+$MEMCACHIER_PORT    = $MEMCACHIER_SERVERS[1];
 
-  $sasl_memcached_config = array(
-    'default' => array(
-      array(
-        'host' => $MEMCACHIER_HOST,
-        'port' => $MEMCACHIER_PORT,
-        'user' => getenv('MEMCACHIER_USERNAME'),
-        'pass' => getenv('MEMCACHIER_PASSWORD'),
-      ),
+$sasl_memcached_config = array(
+  'default' => array(
+    array(
+      'host' => $MEMCACHIER_HOST,
+      'port' => $MEMCACHIER_PORT,
+      'user' => getenv('MEMCACHIER_USERNAME'),
+      'pass' => getenv('MEMCACHIER_PASSWORD'),
     ),
-  );
-}
+  ),
+);
 
 // Disable filesystem level changes from WP
 define('DISALLOW_FILE_EDIT', TRUE);

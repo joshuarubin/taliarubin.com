@@ -82,25 +82,27 @@ function wp_cache_get($key, $group = '', $force = false) {
 	return $wp_object_cache->get($key, $group, $force);
 }
 
-function wp_cache_init() {
-	global $wp_object_cache, $sasl_memcached_config;
+if (getenv('CACHE') == 1) {
+  function wp_cache_init() {
+    global $wp_object_cache, $sasl_memcached_config;
 
-	$wp_object_cache = new WP_Object_Cache();
+    $wp_object_cache = new WP_Object_Cache();
 
-	if ( isset( $sasl_memcached_config ) && is_array( $sasl_memcached_config ) ) {
-		$wp_object_cache->load_from_config( $sasl_memcached_config );
-	} else {
-		$wp_object_cache->load_from_config(array(
-			'default' => array(
-				array(
-					'host' => '127.0.0.1',
-					'port' => '11211',
-					'user' => null,
-					'pass' => null,
-				),
-			),
-		));
-	}
+    if ( isset( $sasl_memcached_config ) && is_array( $sasl_memcached_config ) ) {
+      $wp_object_cache->load_from_config( $sasl_memcached_config );
+    } else {
+      $wp_object_cache->load_from_config(array(
+        'default' => array(
+          array(
+            'host' => '127.0.0.1',
+            'port' => '11211',
+            'user' => null,
+            'pass' => null,
+          ),
+        ),
+      ));
+    }
+  }
 }
 
 function wp_cache_replace($key, $data, $group = '', $expire = 0) {
