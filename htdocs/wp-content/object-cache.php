@@ -1,6 +1,6 @@
 <?php
 
-if (getenv('CACHE') != 1) return;
+if (getenv('CACHE') == 1) {
 
 /**
  *  Plugin Name: SASL Object Cache
@@ -426,4 +426,6 @@ class WP_Object_Cache {
 		$this->cache_hits =& $this->stats['get'];
 		$this->cache_misses =& $this->stats['add'];
 	}
+}
+
 }
