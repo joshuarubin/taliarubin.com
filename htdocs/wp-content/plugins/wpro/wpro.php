@@ -537,6 +537,7 @@ class WordpressReadOnly extends WordpressReadOnlyGeneric {
           $mime = 'image/gif';
           break;
         case '.jpg':
+        case '.jpeg':
           $mime = 'image/jpeg';
           break;
         case '.png':
