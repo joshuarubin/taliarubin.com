@@ -521,6 +521,8 @@ class WordpressReadOnly extends WordpressReadOnlyGeneric {
   }
 
   function generate_attachment_metadata($data) {
+    $this->debug("WordpressReadOnly::generate_attachment_metadata\n" . print_r($data, TRUE));
+
     if (!is_array($data) || !isset($data['sizes']) || !is_array($data['sizes'])) return $data;
 
     $upload_dir = wp_upload_dir();
