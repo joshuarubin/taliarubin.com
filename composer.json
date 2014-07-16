@@ -1,6 +1,6 @@
 {
   "require": {
-    "mysql": "*",
-    "imagick": "*"
+    "ext-mysql": "*",
+    "ext-imagick": "*"
   }
 }
