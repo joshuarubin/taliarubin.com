@@ -60,13 +60,12 @@ class Publicize_UI {
 			array( 'jquery', 'thickbox' ),
 			'20121019'
 		);
-
-		wp_enqueue_style(
-			'publicize',
-			plugins_url( 'assets/publicize.css', __FILE__ ),
-			array(),
-			'20120925'
-		);
+		if( is_rtl() ) {
+			wp_enqueue_style( 'publicize', plugins_url( 'assets/rtl/publicize-rtl.css', __FILE__ ), array(), '20120925' );
+		} else {
+			wp_enqueue_style( 'publicize', plugins_url( 'assets/publicize.css', __FILE__ ), array(), '20120925' );
+		}
+		
 
 		add_thickbox();
 	}
@@ -370,7 +369,13 @@ jQuery( function($) {
 		authClick = true;
 		$(this).after( '<img src="images/loading.gif" class="alignleft" style="margin: 0 .5em" />' );
 		$.ajaxSetup( { async: false } );
-		autosave();
+
+		if ( window.wp && window.wp.autosave ) {
+			window.wp.autosave.server.triggerSave();
+		} else {
+			autosave();
+		}
+
 		return true;
 	} );
 
@@ -548,7 +553,11 @@ jQuery( function($) {
 
 							// Should we be skipping this one?
 							$skip = (
-								get_post_meta( $post->ID, $this->publicize->POST_SKIP . $unique_id, true )
+								(
+									in_array( $post->post_status, array( 'publish', 'draft', 'future' ) )
+									&&
+									get_post_meta( $post->ID, $this->publicize->POST_SKIP . $unique_id, true )
+								)
 								||
 								(
 									is_array( $connection )
@@ -671,10 +680,10 @@ jQuery( function($) {
 			endif;
 			?>
 
-			<span id="publicize-defaults"><strong><?php echo join( '</strong>, <strong>', array_map( 'esc_html', $active ) ); ?></strong></span>
+			<span id="publicize-defaults"><strong><?php echo join( '</strong>, <strong>', array_map( 'esc_html', $active ) ); ?></strong></span><br />
 
 			<?php if ( 0 < count( $services ) ) : ?>
-				<a href="#" id="publicize-form-edit"><?php _e( 'Edit', 'jetpack' ); ?></a>&nbsp;<a href="<?php echo admin_url( 'options-general.php?page=sharing' ); ?>" target="_blank"><?php _e( 'Settings', 'jetpack' ); ?></a><br />
+				<a href="#" id="publicize-form-edit"><?php _e( 'Edit Details', 'jetpack' ); ?></a>&nbsp;<a href="<?php echo admin_url( 'options-general.php?page=sharing' ); ?>" target="_blank"><?php _e( 'Settings', 'jetpack' ); ?></a><br />
 			<?php else : ?>
 				<a href="#" id="publicize-disconnected-form-show"><?php _e( 'Show', 'jetpack' ); ?></a><br />
 			<?php endif; ?>

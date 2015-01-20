@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: WordPress phpinfo()
-Plugin URI: http://thisismyurl.com/plugins/wordpress-phpinfo/
+Plugin URI: http://thisismyurl.com/downloads/wordpress-phpinfo/
 Description:  This simple plugin adds an option to an adminstrator's Tools menu which displays standard phpinfo() feedback details to the user.
 Author: Christopher Ross
-Version: 3.5.2
+Version: 14.12
 Author URI: http://thisismyurl.com/
 */
 
@@ -16,151 +16,157 @@ Author URI: http://thisismyurl.com/
  *
  * @link		http://wordpress.org/extend/plugins/wordpress-phpinfo/
  *
- * @package 		WordPress phpinfo()
- * @copyright		Copyright (c) 2008, Chrsitopher Ross
+ * @package 	WordPress phpinfo()
+ * @copyright	Copyright (c) 2008, Chrsitopher Ross
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License, v2 (or newer)
  *
  * @since 		WordPress phpinfo() 1.0
+ *
+ *
  */
 
 
-// add menu to WP admin
-function thisismyurl_php_info_wordpress_menu() {
-	$thisismyurl_php_info_settings = add_management_page( 'phpinfo()', 'phpinfo()', 'edit_posts', 'thisismyurl_php_info', 'thisismyurl_php_info_wordpress_options' );
-	add_action( 'load-'.$thisismyurl_php_info_settings, 'thisismyurl_php_info_wordpress_scripts' );
-}
-add_action( 'admin_menu', 'thisismyurl_php_info_wordpress_menu' );
 
 
-function thisismyurl_php_info_wordpress_scripts() {
-	wp_enqueue_style( 'dashboard' );
-	wp_enqueue_script( 'postbox' );
-	wp_enqueue_script( 'dashboard' );
-	?>
-	    <style>
-			.thisismyurl_php_info_key {width: 30%; float: left; padding-bottom: 10px; clear:left;}
-			.thisismyurl_php_info_value {width: 70%; float: left; padding-bottom: 10px; clear:right;}
-	   </style>
-	<?php
+/**
+ * Creates the Class for WordPress phpinfo() 
+ *
+ * @author     Christopher Ross <info@thisismyurl.com>
+ * @version    Release: @14.11@
+ * @see        wp_enqueue_scripts()
+ * @since      Class available since Release 14.11
+ */
+class thissimyurl_WPPHPInfo {
+	
+	 /**
+	  * Standard Constructor
+	  *
+      * @access public
+      * @static
+	  * @uses http://codex.wordpress.org/Function_Reference/add_action
+      * @since Method available since Release 14.11
+	  */
+    public function __construct() {
+ 
+        add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+     	add_action( 'admin_menu', array( $this, 'admin_menu' ) );
+    }
+ 
 
-}
+	/**
+	  * admin_enqueue_scripts 
+	  *
+      * @access public
+      * @static
+	  * @uses http://codex.wordpress.org/Function_Reference/wp_enqueue_style
+      * @since Method available since Release 14.12
+      *
+	  */
+	function admin_enqueue_scripts() {
+		
+		if ( isset( $_GET['page'] ) ) {
+			
+			if ( 'thisismyurl_wpphpinfo' != $_GET['page'] )
+		        return;
 
-function thisismyurl_php_info_wordpress_options() {
+			wp_register_style( 'thisismyurl-wpphpinfo', plugin_dir_url( __FILE__ ) . 'css/thisismyurl-admin.css', false, '14.12' );
+		    wp_enqueue_style( 'thisismyurl-wpphpinfo' );
 
-	if ( $_POST ) {
-		$setting = array( $_POST['setting1'], $_POST['setting2'], $_POST['setting3'] );
-		update_option( 'thisismyurl_php_info', json_encode( $setting ) );
+		}
+
 	}
 
-	if ( empty( $setting ) )
-		$setting = json_decode( get_option( 'thisismyurl_php_info' ) );
+	/**
+	  * admin_menu 
+	  *
+      * @access public
+      * @static
+	  * @uses http://codex.wordpress.org/Function_Reference/add_options_page
+      * @since Method available since Release 14.12
+      *
+	  */
+	function admin_menu() {
+		add_options_page( __( 'WordPress phpinfo()', 'thisismyurl_wpphpinfo' ), __( 'WordPress phpinfo()', 'thisismyurl_wpphpinfo' ), 'manage_options', 'thisismyurl_wpphpinfo', array( $this, 'thisismyurl_wpphpinfo_page' ) );
+	}
+	
 
+	function thisismyurl_wpphpinfo_page() {
+		?>
+		<div class="wrap">
+			<div class="thisismyurl-icon32"><br /></div>
+			<h2><?php _e( 'WordPress phpinfo()', 'thisismyurl_wpphpinfo' ); ?></h2>
+			<p><?php _e( 'It is important for a non technical administrator to be able to diagnose server related problems in WordPress.', 'thisismyurl_wpphpinfo' ); ?></p>
 
-	$settingcount = 0;
-	if ( $setting ) {
-		foreach ( $setting as $settingitem ) {
+			<h3><?php _e( 'General Settings', 'thisismyurl_wpphpinfo' ); ?></h3>
+			<p><?php printf( __( 'The plugin has no settings, once activated it will work automattically. For further details, please view the <a href="%sreadme.txt">readme.txt</a> file included with this release.', 'thisismyurl_wpphpinfo' ), plugin_dir_url( __FILE__ ) ); ?></p>
+			<?php $this->phpinfo_output(); ?>
+		</div>
+		<?php
+	}
 
-			if ( $setting[$settingcount] )
-				$cb[$settingcount] = 'checked="checked"';
+	function phpinfo_output() {
+		
+		ob_start();
+		phpinfo(-1);
+		$phpinfo_content = ob_get_contents();
+		ob_end_clean();
 
-			$settingcount++;
+		if ( ! empty( $phpinfo_content ) )
+			$phpinfo_array = explode( '<table', $phpinfo_content );
+
+		if ( ! empty( $phpinfo_array ) ) {
+			unset( $phpinfo_array[0] );
+			foreach ( $phpinfo_array as $phpinfo_element ) {
+				
+				$phpinfo_element = str_replace( '<tr', '<tr valign="top"', $phpinfo_element );
+
+				echo '<table class="phpinfo" ' . $phpinfo_element;
+				echo '<div style="clear:both"></div>';
+			}
+
 		}
 	}
 
-
-	echo '<div class="wrap">
-			<div class="thisismyurl icon32"><br /></div>
-			<h2>'.__( 'PHPinfo() for WordPress by Christopher Ross','thisismyurl_php_info' ).'</h2>
-			<div class="postbox-container" style="width:70%">
-			<div class="metabox-holder">
-					<div class="meta-box-sortables">';
-	$php_info = ( thisismyurl_php_info_phpinfo_array() );
-
-	if ( $php_info ) {
-		foreach ( $php_info as $php_info_section_key => $php_info_section ) {
-
-			echo '
-				<div id="edit-pages" class="postbox">
-				<div class="handlediv" title="' . __( 'Click to toggle','thisismyurl_php_info' ) . '"><br /></div>
-				<h3 class="hndle"><span>' . __( $php_info_section_key,'thisismyurl_php_info' ) . '</span></h3>
-				<div class="inside">';
-
-				if ( $php_info_section ) {
-				foreach ( $php_info_section as $key => $value )  {
-
-					if ( !is_string( $value ) )
-						$value  = strval( $value );
-
-					echo "<div class='thisismyurl_php_info_key'>" . $key . "</div>";
-					echo "<div class='thisismyurl_php_info_value'>" . wordwrap( $value, 50, "<br />\n", true ) . "</div>";
-				}
-		}
-
-			echo'<div style="clear:both;"></div></div><!-- .inside --></div><!-- #edit-pages -->';
-		}
-	}
-
-	echo '	</div><!-- .meta-box-sortables -->
-					</div><!-- .metabox-holder -->
-
-			</div><!-- .postbox-container -->
-
-			<div class="postbox-container" style="width:20%">
-
-				<div class="metabox-holder">
-				<div class="meta-box-sortables">
-
-					<div id="edit-pages" class="postbox">
-					<div class="handlediv" title="'.__( 'Click to toggle','thisismyurl_php_info' ).'"><br /></div>
-					<h3 class="hndle"><span>'.__( 'Plugin Information','thisismyurl_php_info' ).'</span></h3>
-					<div class="inside">
-						<p>'.__( 'phpinfo() by Christopher Ross is a free WordPress plugin. If you\'ve enjoyed the plugin please give the plugin 5 stars on WordPress.org.','thisismyurl_php_info' ).'</p>
-						<p>'.__( 'Want to help? Please consider translating this pluginto your local language, or offering a hand in the support forums.','thisismyurl_php_info' ).'</p>
-						<p><a href="http://wordpress.org/extend/plugins/wordpress-php-info/">WordPress.org</a> | <a href="http://thisismyurl.com">'.__( 'Plugin Author','thisismyurl_php_info' ).'</a></p>
-					</div><!-- .inside -->
-					</div><!-- #edit-pages -->
-
-				</div><!-- .meta-box-sortables -->
-				</div><!-- .metabox-holder -->
-
-			</div><!-- .postbox-container -->
-	</div><!-- .wrap -->
-
-	';
+ 
 }
 
-function thisismyurl_php_info_phpinfo_array( $return=false ){
+$thissimyurl_WPPHPInfo = new thissimyurl_WPPHPInfo;
 
-	ob_start();
-	phpinfo(-1);
 
-	$pi = preg_replace(
-	array('#^.*<body>(.*)</body>.*$#ms', '#<h2>PHP License</h2>.*$#ms',
-	'#<h1>Configuration</h1>#',  "#\r?\n#", "#</(h1|h2|h3|tr)>#", '# +<#',
-	"#[ \t]+#", '#&nbsp;#', '#  +#', '# class=".*?"#', '%&#039;%',
-	'#<tr>(?:.*?)" src="(?:.*?)=(.*?)" alt="PHP Logo" /></a>'
-	.'<h1>PHP Version (.*?)</h1>(?:\n+?)</td></tr>#',
-	'#<h1><a href="(?:.*?)\?=(.*?)">PHP Credits</a></h1>#',
-	'#<tr>(?:.*?)" src="(?:.*?)=(.*?)"(?:.*?)Zend Engine (.*?),(?:.*?)</tr>#',
-	"# +#", '#<tr>#', '#</tr>#'),
-	array('$1', '', '', '', '</$1>' . "\n", '<', ' ', ' ', ' ', '', ' ',
-	'<h2>PHP Configuration</h2>'."\n".'<tr><td>PHP Version</td><td>$2</td></tr>'.
-	"\n".'<tr><td>PHP Egg</td><td>$1</td></tr>',
-	'<tr><td>PHP Credits Egg</td><td>$1</td></tr>',
-	'<tr><td>Zend Engine</td><td>$2</td></tr>' . "\n" .
-	'<tr><td>Zend Egg</td><td>$1</td></tr>', ' ', '%S%', '%E%'),
-	ob_get_clean() );
 
-	$sections = explode( '<h2>', strip_tags( $pi, '<h2><th><td>' ) );
-	unset( $sections[0] );
 
-	$pi = array();
-	foreach( $sections as $section ) {
-		$n = substr( $section, 0, strpos( $section, '</h2>' ) );
-		preg_match_all( '#%S%(?:<td>(.*?)</td>)?(?:<td>(.*?)</td>)?(?:<td>(.*?)</td>)?%E%#',$section, $askapache, PREG_SET_ORDER );
-		foreach( $askapache as $m )
-			$pi[$n][$m[1]]=( !isset( $m[3] )||$m[2]==$m[3] )?$m[2]:array_slice( $m,2 );
+
+
+
+
+
+
+/**
+  * plugin_action_links 
+  *
+  * @access public
+  * @static
+  * @since Method available since Release 14.12
+  * @todo why can't this be called within the class?
+  *
+  */
+function thisismyurl_wpphpinfo_plugin_action_links( $links, $file ) {
+
+	static $this_plugin;
+
+	if( ! $this_plugin )
+		$this_plugin = plugin_basename( __FILE__ );
+
+	if( $file == $this_plugin ){
+		$links[] = '<a href="options-general.php?page=thisismyurl_wpphpinfo">' . __( 'phpinfo()', 'thisismyurl_wpphpinfo' ) . '</a>';
+		$links[] = '<a href="http://thisismyurl.com/downloads/wordpress-phpinfo/">' . __( 'Author', 'thisismyurl_wpphpinfo' ) . '</a>';
 	}
+	return $links;
+}
+add_filter( 'plugin_action_links', 'thisismyurl_wpphpinfo_plugin_action_links', 10, 2 );
 
-	return $pi;
+
+
+function wordpressphpinfo(){
+	return $thissimyurl_WPPHPInfo->phpinfo_output();
 }

@@ -10,6 +10,7 @@ class Jetpack_Options {
 				'register',
 				'activated',
 				'active_modules',
+				'available_modules',
 				'do_activate',
 				'log',
 				'publicize',
@@ -17,6 +18,15 @@ class Jetpack_Options {
 				'widget_twitter',
 				'wpcc_options',
 				'relatedposts',
+				'file_data',
+				'autoupdate_plugins',          // (array)  An array of plugin ids ( eg. jetpack/jetpack ) that should be autoupdated
+				'autoupdate_themes',           // (array)  An array of theme ids ( eg. twentyfourteen ) that should be autoupdated
+				'autoupdate_core',             // (bool)   Whether or not to autoupdate core
+				'json_api_full_management',    // (bool)   Allow full management (eg. Activate, Upgrade plugins) of the site via the JSON API.
+				'sync_non_public_post_stati',  // (bool)   Allow synchronisation of posts and pages with non-public status.
+				'site_icon_url',			   // (string) url to the full site icon
+				'site_icon_id',				   // (int)    Attachment id of the site icon file
+				'dismissed_manage_banner' // (bool) Dismiss jetpack manage banner allows the user to dismiss the banner permenetly
 			);
 		}
 
@@ -50,7 +60,7 @@ class Jetpack_Options {
 	 */
 	public static function get_option( $name, $default = false ) {
 		if ( in_array( $name, self::get_option_names( 'non_compact' ) ) ) {
-			return get_option( "jetpack_$name" );
+			return get_option( "jetpack_$name", $default );
 		} else if ( !in_array( $name, self::get_option_names() ) ) {
 			trigger_error( sprintf( 'Invalid Jetpack option name: %s', $name ), E_USER_WARNING );
 			return false;
@@ -71,6 +81,7 @@ class Jetpack_Options {
 	 * @param mixed  $value Option value
 	 */
 	public static function update_option( $name, $value ) {
+		do_action( 'pre_update_jetpack_option_' . $name, $name, $value );
 		if ( in_array( $name, self::get_option_names( 'non_compact' ) ) ) {
 			return update_option( "jetpack_$name", $value );
 		} else if ( !in_array( $name, self::get_option_names() ) ) {

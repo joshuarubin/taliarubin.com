@@ -21,6 +21,7 @@ class Jetpack_Sync {
 	function __construct() {
 		// WP Cron action.  Only used on upgrade
 		add_action( 'jetpack_sync_all_registered_options', array( $this, 'sync_all_registered_options' ) );
+		add_action( 'jetpack_heartbeat',  array( $this, 'sync_all_registered_options' ) );
 	}
 
 /* Static Methods for Modules */
@@ -32,6 +33,7 @@ class Jetpack_Sync {
 	 *	post_stati => array( post_status slugs ): The post stati to sync.  Default: publish
 	 */
 	static function sync_posts( $file, array $settings = null ) {
+		if( is_network_admin() ) return;
 		$jetpack = Jetpack::init();
 		$args = func_get_args();
 		return call_user_func_array( array( $jetpack->sync, 'posts' ), $args );
@@ -46,6 +48,7 @@ class Jetpack_Sync {
 	 * 	comment_stati => array( comment_status slugs ): The comment stati to sync.  Default: approved
 	 */
 	static function sync_comments( $file, array $settings = null ) {
+		if( is_network_admin() ) return;
 		$jetpack = Jetpack::init();
 		$args = func_get_args();
 		return call_user_func_array( array( $jetpack->sync, 'comments' ), $args );
@@ -57,6 +60,7 @@ class Jetpack_Sync {
 	 * @param string $option ...
 	 */
 	static function sync_options( $file, $option /*, $option, ... */ ) {
+		if( is_network_admin() ) return;
 		$jetpack = Jetpack::init();
 		$args = func_get_args();
 		return call_user_func_array( array( $jetpack->sync, 'options' ), $args );
@@ -131,6 +135,7 @@ class Jetpack_Sync {
 		$sync_data = array(
 			'modules' => $modules,
 			'version' => JETPACK__VERSION,
+			'is_multisite' => is_multisite(),
 		);
 
 		return $sync_data;
@@ -463,8 +468,29 @@ class Jetpack_Sync {
 
 		if ( $fid = get_post_thumbnail_id( $id ) ) {
 			$feature = wp_get_attachment_image_src( $fid, 'large' );
-			if ( !empty( $feature[0] ) )
+			if ( ! empty( $feature[0] ) ) {
 				$post['extra']['featured_image'] = $feature[0];
+			}
+
+			$attachment = get_post( $fid );
+			if ( ! empty( $attachment ) ) {
+				$metadata = wp_get_attachment_metadata( $fid );
+
+				$post['extra']['post_thumbnail'] = array(
+					'ID'        => (int) $fid,
+					'URL'       => (string) wp_get_attachment_url( $fid ),
+					'guid'      => (string) $attachment->guid,
+					'mime_type' => (string) $attachment->post_mime_type,
+					'width'     => (int) isset( $metadata['width'] ) ? $metadata['width'] : 0,
+					'height'    => (int) isset( $metadata['height'] ) ? $metadata['height'] : 0,
+				);
+
+				if ( isset( $metadata['duration'] ) ) {
+					$post['extra']['post_thumbnail'] = (int) $metadata['duration'];
+				}
+
+				$post['extra']['post_thumbnail'] = (object) apply_filters( 'get_attachment', $post['extra']['post_thumbnail'] );
+			}
 		}
 
 		$post['permalink'] = get_permalink( $post_obj->ID );
@@ -714,8 +740,15 @@ class Jetpack_Sync {
 		}
 	}
 
+	public function reindex_needed() {
+		return ( $this->_get_post_count_local() != $this->_get_post_count_cloud() );
+	}
+
 	public function reindex_trigger() {
 		$response = array( 'status' => 'ERROR' );
+
+		// Force a privacy check
+		Jetpack::check_privacy( JETPACK__PLUGIN_FILE );
 
 		Jetpack::load_xml_rpc_client();
 		$client = new Jetpack_IXR_Client( array(
@@ -761,7 +794,7 @@ class Jetpack_Sync {
 		$strings = json_encode( array(
 			'WAITING' => array(
 				'action' => __( 'Refresh Status', 'jetpack' ),
-				'status' => __( 'Indexing posts&hellip;', 'jetpack' ),
+				'status' => __( 'Indexing request queued and waiting&hellip;', 'jetpack' ),
 			),
 			'INDEXING' => array(
 				'action' => __( 'Refresh Status', 'jetpack' ),
@@ -775,11 +808,15 @@ class Jetpack_Sync {
 				'action' => __( 'Refresh Status', 'jetpack' ),
 				'status' => __( 'Status unknown.', 'jetpack' ),
 			),
+			'ERROR:LARGE' => array(
+				'action' => __( 'Refresh Status', 'jetpack' ),
+				'status' => __( 'This site is too large, please contact Jetpack support to sync.', 'jetpack' ),
+			),
 		) );
 
 		wp_enqueue_script(
 			'jetpack_sync_reindex_control',
-			plugins_url( '_inc/jquery.jetpack-sync.js', __FILE__ ),
+			plugins_url( '_inc/jquery.jetpack-sync.js', JETPACK__PLUGIN_FILE ),
 			array( 'jquery' ),
 			JETPACK__VERSION
 		);
@@ -797,4 +834,40 @@ EOT;
 			esc_attr__( 'Refresh Status', 'jetpack' )
 		);
 	}
+
+	private function _get_post_count_local() {
+		global $wpdb;
+		return (int) $wpdb->get_var(
+			"SELECT count(*)
+				FROM {$wpdb->posts}
+				WHERE post_status = 'publish' AND post_password = ''"
+		);
+	}
+
+	private function _get_post_count_cloud() {
+		$blog_id = Jetpack::init()->get_option( 'id' );
+
+		$body = array(
+			'size' => 1,
+		);
+
+		$response = wp_remote_post(
+			"https://public-api.wordpress.com/rest/v1/sites/$blog_id/search",
+			array(
+				'timeout' => 10,
+				'user-agent' => 'jetpack_related_posts',
+				'sslverify' => true,
+				'body' => $body,
+			)
+		);
+
+		if ( is_wp_error( $response ) ) {
+			return 0;
+		}
+
+		$results = json_decode( wp_remote_retrieve_body( $response ), true );
+
+		return (int) $results['results']['total'];
+	}
+
 }
